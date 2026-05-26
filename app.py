@@ -4,10 +4,10 @@ import helper
 import settings
 
 st.set_page_config(
-    page_title="Waste Detection",
+    page_title="Waste Detection(DEMO)",
 )
 
-st.sidebar.title("Detect Console")
+st.sidebar.title("Detection Console (TEST)")
 
 model_path = Path(settings.DETECTION_MODEL)
 
@@ -53,5 +53,5 @@ except Exception as ex:
     st.error(ex)
 helper.play_webcam(model)
 
-st.sidebar.markdown("This is a demo of the waste detection model.", unsafe_allow_html=True)
+st.sidebar.markdown("This is a demo of the waste detection model MADE BY hatef_jani.", unsafe_allow_html=True)
 
